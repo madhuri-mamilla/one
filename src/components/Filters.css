@@ -1,0 +1,54 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters__row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.diet-toggle {
+  display: inline-flex;
+  background: var(--chip-bg);
+  border-radius: 999px;
+  padding: 0.25rem;
+}
+
+.diet-toggle button {
+  border: none;
+  background: transparent;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.diet-toggle button.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.include-egg {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.filters select {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+  color: var(--text);
+}
